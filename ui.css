@@ -1,0 +1,180 @@
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.dropdown-item {
+  
+  color: #f1f1f1;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #111;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav input[type="text"] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 2%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  padding-top: 40px;
+  display: none;
+}
+.dropdown {
+  display: block; 
+  color: #f1f1f1;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #111;
+  
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #111;
+  color: white;
+}
+
+.chart {
+  width: 600px; /* Set the width */
+  height: 300px; /* Set the height */
+}
+
+.mychart {
+  width: 600px; /* Set the width */
+  height: 300px; /* Set the height */
+}
+
+.addchart {
+  width: 600px; /* Set the width */
+  height: 300px; /* Set the height */
+}
+
+li.open{
+  color: green;
+}
+
+li.open::before {
+  content: "✓";
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  background-size: contain;
+}
+
+li.closed{
+  color: red;
+}
+
+li.closed::before {
+  content: "✗";
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  background-size: contain;
+} 
+
+li.ontime{
+  color: #4caf50;
+}
+
+li.ontime::before {
+  content: "";
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  background: url('ontime.png') no-repeat center center;
+  background-size: contain;
+}
+
+li.late{
+  color: #f44336;
+}
+
+li.late::before {
+  content: "";
+  display: inline-block;
+  width: 20px; 
+  height: 20px; 
+  background: url('late.png') no-repeat center center;
+  background-size: contain;
+}
+
+.headerButton {
+  cursor: pointer;
+}
+
+.headerButton:hover {
+  background-color: lightgray;
+}
+
+.topbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  margin-left: 200px;
+  width: calc(100% - 240px);
+}
+
+.navigateButtonContainer {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  margin-top: 25%;
+  margin-left: 50%;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

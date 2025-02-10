@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="./ui.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+
+<div class="sidenav">
+<input id="token" type="text" placeholder="Token" />
+<input id="organ" type="text" placeholder="Organization" />
+
+
+   <div id="group">
+   </div>
+</div>
+
+<div class="topbar">
+  <div>
+    Performance evaluation 
+  </div>
+  <div class="navigateButtonContainer">
+    <div id="overviewNav" class="headerButton">Overview</div>
+    <div id="issueNav" class="headerButton">Issue created</div>
+    <div id="milestoneNav" class="headerButton">Milestone</div>
+  </div>
+</div>
+
+<div class="loader"></div>
+<div class="main">
+  <div class ="chart-container">
+    <div class ="chart"></div>
+    <div class="mychart"></div>
+    <div class="addchart"></div>
+  </div>
+</div>
+
+
+<script type="module" src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@^3"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@^2"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@^1"></script>
+</body>
+</html> 
